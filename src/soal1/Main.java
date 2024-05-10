@@ -6,11 +6,12 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        // Membuat objek skincare
+        // Membuat objek skincare dengan meminta user memasukkan inputan
         Scanner in = new Scanner(System.in);
         System.out.print("Total Skincare : ");
         int banyakSkincare = in.nextInt();
         in.nextLine();
+
         Skincare[] skincares = new Skincare[banyakSkincare];
         for(int i=0 ; i<banyakSkincare ; i++ ){
             System.out.println("Skincare " + (i + 1));
@@ -33,7 +34,7 @@ public class Main {
             System.out.print("Banyak Ingredient: ");
             banyakIngredient = in.nextInt();
             List<String> ingredients = new ArrayList<>();
-            in.nextLine(); // Membersihkan newline character
+            in.nextLine(); //Membersihkan newline character
             for (int j = 0; j < banyakIngredient; j++) {
                 String ingredient;
                 System.out.print("Ingredient " + (j+1) + ": ");
@@ -43,13 +44,14 @@ public class Main {
             skincares[i] = new Skincare(brand, productName, price, netto, stock, ingredients);
             System.out.println();
         }
-//        Menampilkan informasi produk
+        //  Menampilkan informasi produk
         for (int i = 0; i < banyakSkincare; i++) {
             System.out.println("Skincare " + (i + 1));
             System.out.println("Product Information:");
             System.out.println(skincares[i]);
             System.out.println();
         }
+        // Method overloading untuk memeriksa ketersediaan stok suatu objek Skincare
         System.out.println(skincares[0].checkAvailability());
         System.out.println(skincares[0].checkAvailability(5));
         in.close();

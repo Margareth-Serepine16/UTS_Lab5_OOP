@@ -3,7 +3,7 @@ package soal1;
 import java.util.ArrayList;
 import java.util.List;
 
-// Class representing a skincare product
+//  Kelas Skincare memuat objek berupa Skincare yang dapat menyimpan informasi tentang objek tersebut
 class Skincare {
     // Attributes
     final private String brand;
@@ -13,7 +13,7 @@ class Skincare {
     final private List<String> ingredients;
     private int stock;
 
-    // Constructor
+    // Constructor untuk membuat objek Skincare baru dengan memberikan nilai awal kepada atribut-atributnya
     public Skincare(String brand, String productName, double price, int netto, int stock, List<String> ingredients) {
         this.brand = brand;
         this.productName = productName;
@@ -34,7 +34,7 @@ class Skincare {
         "\nIngredients: " + ingredients;
     }
 
-    // Metode untuk memeriksa apakah produk tersebut tersedia
+    // Method untuk memeriksa apakah produk tersebut tersedia
     public boolean checkAvailability() {
         return stock > 0;
     }
@@ -44,34 +44,32 @@ class Skincare {
         return stock >= quantity;
     }
 
-    // Getter untuk brand
-
+    // Getter untuk mengambil nama brand
     public String getBrand() {
         return brand;
     }
 
-    // Getter untuk productName
-
+    // Getter untuk mengambil productName
     public String getProductName() {
         return productName;
     }
 
-    // Getter untuk price
+    // Getter untuk untuk mengambil nilai price
     public double getPrice() {
         return price;
     }
 
-    // Getter untuk netto
+    // Getter untuk mengambil nilai netto (berat bersih)
     public int getNetto() {
         return netto;
     }
 
-    // Getter untuk stock
+    // Getter untuk mengambil nilai stock
     public int getStock() {
         return stock;
     }
 
-    // Setter untuk price
+    // Setter untuk mengatur dan mengecek nilai stock suatu Skincare
     public void setStock(int stock) {
         if (stock >= 0) {
             this.stock = stock;
@@ -80,7 +78,7 @@ class Skincare {
         }
     }
 
-    // Getter untuk ingredients
+    // Getter untuk mengambil daftar ingredients yang dimiliki oleh suatu Skincare
     public List<String> getIngredients() {
         return ingredients;
     }
