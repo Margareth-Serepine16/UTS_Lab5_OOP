@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3e9167f-838c-419c-8f06-261d093ea680" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/soal1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soal1/SkinCare.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/soal2/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
