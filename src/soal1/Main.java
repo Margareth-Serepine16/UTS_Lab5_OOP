@@ -51,7 +51,7 @@ public class Main {
             System.out.println(skincares[i]);
             System.out.println();
         }
-        // Method overloading untuk memeriksa ketersediaan stok suatu objek Skincare
+        // Method overloading untuk memeriksa ketersediaan stok objek Skincare
         System.out.println(skincares[0].checkAvailability());
         System.out.println(skincares[0].checkAvailability(5));
         in.close();
